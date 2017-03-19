@@ -13,7 +13,7 @@ $(document).ready(function(){
 
 
 	$(".minus_close").click(function(){
-		$(".togglebox").hide(1000);
+		$(".togglebox").slideUp();
 
 	
 

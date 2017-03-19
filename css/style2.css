@@ -21,6 +21,8 @@ body {
 line-height: 1.2;
 }
 
+
+
 /* Общие стили для всео сайта и отдельных элементов */
 
 
@@ -29,6 +31,7 @@ html {
   padding-bottom: 0;
   margin-bottom: 0;
   overflow-x: hidden;
+  background-color: #000;
   
 }
 
@@ -46,6 +49,11 @@ body {
   max-width: 690px!important;
   padding-left: 0;
   padding-right: 0;
+}
+
+.container-fluid {
+  max-width: 1340px!important;
+  
 }
 
 
@@ -71,12 +79,20 @@ body {
 }
 
 
-.number { 
-  font-size: 1.2vw;
-  font-weight: bold;
-  padding-bottom: 5px;
-  padding-top: 3px;
-  padding-left: 47px;
+
+.phone {
+background-image: url(../img/tele-min.png); 
+background-repeat: no-repeat;
+padding-left: 25px;
+float: right;
+font-size: 16px;
+font-weight: bold;
+float: right;
+padding-top: 5px;
+padding-bottom: 3px;
+  
+
+
 }
 
 button.application {
@@ -86,11 +102,18 @@ button.application {
   background-color: transparent;
   border: none;
   color: #fff;
-  font-size: 1vw;  
+  font-size: 16px;  
   width: 180px;
   height: 39px;
   padding-bottom: 5px;
-  margin-left: 47px;
+  padding-right: 0;
+ 
+}
+
+
+.top_application {
+  display: block;
+  float: right;
 }
 
 
@@ -114,6 +137,7 @@ button.application {
   position: relative;
   margin-bottom: 42px; 
   margin-top: -16px;
+
     
     }
 
@@ -130,7 +154,7 @@ h1.search {
   left: 0;
   right: 0;
   margin: auto;
-  font-size: 2.6vw;  
+  font-size: 36px;  
   text-align: center;
   font-family: 'Roboto Bold', arial;
   
@@ -144,8 +168,7 @@ p.search2 {
   left: 0;
   right: 0;
   margin: auto;
-  color: #37240b;
-  font-size: 1.7vw;
+  font-size: 24px;
   padding-top: 22px;  
   text-align: center;
   font-family: 'Roboto Bold', arial;
@@ -161,10 +184,13 @@ p.search2 {
   background-image: url(../img/questions_screen-min.jpg); 
   background-size:cover;
   background-repeat: no-repeat;
-  
+  padding-left: 0;
+  padding-right: 0;
   background-position: center; 
   padding-bottom: 151px;
   text-align: center;
+
+
   }
 
 
@@ -172,16 +198,17 @@ p.search2 {
 
 .questions_title {
   position: relative;
-  min-height: 100px;
+  min-height: 130px;
+  width: 100%;
   text-align: center;
-   
   }
 
 .title {
-  width: 100%;  
   position: absolute;
-  top:-40px;
+  top:-15%;
   left:0;
+  width: 100%;  
+  
   z-index: 1;
   
 
@@ -189,8 +216,9 @@ p.search2 {
 
 p.do_you_know {
   position: absolute;
+  top: 10%;
   line-height: 100%;
-  font-size: 2vw; 
+  font-size: 24px; 
   font-family: 'Roboto Bold', arial;
   width: 100%;
   text-align: center;
@@ -209,31 +237,37 @@ p.do_you_know {
 
 
   .first_line {
-  float: right;
-  font-size: 1.4vw;
+ float: right;
+  font-size: 16px;
   padding-top: 24px; 
   text-align: center;
+  float: right;
 
 }
 
 
   .question_text { 
-  font-size: 1.4vw;
+  font-size: 16px;
    padding-top: 51px; 
   text-align: center;
+  margin-left: 20px;
+  padding-left: 10px;
   float: left;
+
   
 }
 
+
 img.past1 {
-  display: block;  
-  float: left; 
+  display: block;
   width: 112px;
+  margin-right: 20px;
 }
 
 img.past2 {
   display: block; 
-  width: 108px;
+  max-width: 108px;
+  margin-left: 20px;
 }
 
 img.decoration {
@@ -243,6 +277,9 @@ img.decoration {
   padding-bottom: 5px;
   max-width: 300px;
 }
+
+
+
 
 
 /*Третий  блок с обоснованием важности генеалогии */
@@ -283,19 +320,19 @@ img.decoration {
 
 p#important_to_know {
   top:-18px;
-  font-size: 1.4vw;   
+  font-size: 20px;   
 }
 
 
 p#important_to_know2 {
   top:-18px;
-  font-size: 1.4vw;   
+  font-size: 20px;   
 }
 
 
 .reasons {
   padding-top: 17px;  
-  font-size: 1.3vw;
+  font-size: 16px;
   padding-bottom: 17px;
 }
 
@@ -305,9 +342,10 @@ p#important_to_know2 {
 
 .you_want {
   position: absolute;
-  left: 50%;
+ 
   top: 25%;
-  font-size: 1.7vw;
+  font-size: 22px;
+  width: 100%;
   padding-top: 5px;  
   text-align: center;
   font-family: 'Roboto Bold', arial;
@@ -316,6 +354,7 @@ p#important_to_know2 {
 .tree2 {
   text-align:center;
   position: relative;
+  width: 100%;
   }
 
 
@@ -328,13 +367,11 @@ p#important_to_know2 {
   background-repeat: no-repeat;
   background-size:100% 100%;
   background-repeat: no-repeat;
-  background-position: center; 
-  padding-bottom: 55px;
+  background-position: center;
+  padding-bottom: 75px;
+
   
-
 }
-
-
 
 
 .questions_title3 {
@@ -359,7 +396,7 @@ img.title3 {
 
 #quality { 
   position: absolute;
-  font-size: 1.4vw; 
+  font-size: 18px; 
   font-family: 'Roboto Bold', arial;
   width: 100%;
   padding-right: 30px;
@@ -372,14 +409,21 @@ img.title3 {
 .show_activity {
   max-width: 290px;
   margin-top: 40px;
+  display: block;
+  margin: 0 auto;
+  max-width: 220px;
+
 }
 
 .activity {
   text-align: center;
-  font-size: 0.9vw;
+  font-size: 13px;
   padding-top: 25px;
-  padding-bottom: 25px;
+  padding-bottom: 25px;  
+  text-align: center;
   max-width: 300px;
+  margin: 0 auto;
+
 }
 
 
@@ -398,7 +442,7 @@ img.title3 {
 }
 
 .we_check {
-  font-size: 1.7vw;
+  font-size: 22px;
   text-align: center;
   position: absolute;
   width: 100%;  
@@ -418,6 +462,8 @@ img.title3 {
 img.documents {
   max-width: 200px;
   max-height: 132px;
+  display: block;
+  margin: 0 auto;
 
 }
 
@@ -448,7 +494,7 @@ img.decoration2 {
 
 .do_you_know2 {
   color: #37240b;
-  font-size: 1.2vw;
+  font-size: 16px;
   position: absolute;
   top: 5px;
   left: 33%;
@@ -460,7 +506,19 @@ img.decoration2 {
   
 
 
-
+p.do_you_know3 {
+  position: absolute;
+  top: 10%;
+  line-height: 100%;
+  font-size: 20px; 
+  font-family: 'Roboto Bold', arial;
+  width: 100%;
+  text-align: center;
+  z-index: 7;
+  padding-right: 30px;
+  padding-left: 30px;
+  
+}
 
 
 
@@ -473,7 +531,10 @@ img.decoration2 {
 
 #papirus_ink {
   position: relative;
-  text-align: center;
+  
+  width: 60%;
+  
+  margin: auto;
   
 
 }
@@ -488,18 +549,19 @@ img.decoration2 {
   
  }
 
+
+
+
 p.much_work {
   position: absolute;
   top: 10%;
-  padding-left: 50px;
-  padding-right: 140px;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  left:10%;
+  padding-left: 10px;
+  width: 70%;
   text-align: left;
   margin: auto;
   color: #37240b;
-  font-size: 1.14vw; 
+  font-size: 15px; 
   text-indent: 20px;
   
  
@@ -511,8 +573,21 @@ span.indent {
   text-indent: 20px;
 }
 
+@media screen and (max-width: 750px){
+#papirus_ink {
+  position: relative;
+  
+  width: 100%;
+  
+  margin: auto;
+  
 
+}
 
+p.much_work {
+  font-size: 13px;
+}
+}
 
 #user_get {
  
@@ -528,7 +603,7 @@ span.indent {
 #guarantee {
   position: relative;
   background-image: url(../img/papirus_with_book.png); 
-  background-size:contain;
+  background-size:cover;
   background-repeat: no-repeat;
   background-position: center;
   bottom: 0;
@@ -536,10 +611,6 @@ span.indent {
   position: relative;
   z-index: 2;
   
-  
- 
-
-
 }
 
 
@@ -553,11 +624,6 @@ p.price_of_search {
   text-align: center;
   z-index: 6;
 }
-
-
-
-
-
 
 
 #form_section {
@@ -575,7 +641,7 @@ p.price_of_search {
    
   text-align:center;
   position: relative;
-  width: 900px; 
+  width: 1000px; 
 
   
   }
@@ -584,7 +650,7 @@ p.price_of_search {
    .papirus_form {
    opacity: 0.7;
    width: 100%;
-   min-height: 600px;
+   min-height: 650px;
   
   }
 
@@ -610,7 +676,7 @@ form#order_now {
 
 .count {
   display: inline-block;  
-  font-size: 1.4vw;
+  font-size: 16px;
 }
 
 
@@ -658,9 +724,10 @@ p.search3 {
 
 
 #price {
-  background-image: url(../img/price_background.jpg); 
+  background-image: url(../img/price_background_full.jpg); 
   background-repeat: no-repeat;
   background-size:cover;  
+  min-height: 1700px;
   background-repeat: no-repeat;
   background-position: center top;
   padding-right: 0;
@@ -675,6 +742,12 @@ p.search3 {
 }
 
 
+.pay {
+font-size: 20px;
+padding-top: 60px;
+padding-bottom: 40px;
+}
+
 .counting {
   padding-bottom: 57px;
 }
@@ -685,19 +758,15 @@ p.search3 {
   text-align:center;
   position: relative;
   width: 100%;
-  padding-bottom: 175px;
-  height: 1100px;
+  min-height: 920px;
+  
   
 
    
 
 }
 
- .papirus4 {
-  display: block;
-  max-width: 1000px;
-  float: right;
-  }
+ 
 
 .minus_close {
   font-size: 1.7vw;  
@@ -736,15 +805,21 @@ quotes:"" "";
 
 .features-table
 {
-  
-  
+  width: 87%;
+  max-height: 900px;
+  position: absolute;
+  top: 7%;
+  left: 0;
+  font-size: 15px;
+  float:none;
   border-collapse: separate;
   border: 0;
   border-spacing: 0;
   text-shadow: 0 1px 0 #fff;
   background: transparent;
-  margin-top:20px;
-  margin-bottom:20px;
+  
+  
+ 
 }
  
 .features-table td
@@ -842,13 +917,13 @@ quotes:"" "";
 
 
 .search4 {
-
-  max-width: 640px;
+  
+  width: 650px;
   position: absolute;
-  top: 11%;
-  min-height: 300px;  
-  left:29%;  
-  padding-top: 5px;  
+  top: 12%;
+  left:3%;  
+  padding-top: 5px;
+
   
   
   
@@ -856,13 +931,10 @@ quotes:"" "";
 }
 
 .approximate_price {
-  font-size: 1.6vw;
+  font-size: 24px;
   text-align: left;
-  position: absolute;
-  top:30px;
-  width: 600px;
-  left: 33%;
-  margin-right: -300px;
+  padding-bottom: 50px;
+  
 
 }
 
@@ -871,7 +943,7 @@ quotes:"" "";
 background-image: url(../img/FAQ_background.jpg); 
 background-repeat: no-repeat;
 background-size:cover;
-min-height: 340px;
+min-height: 200px;
 background-repeat: no-repeat;
 background-position: center;
 
@@ -938,11 +1010,13 @@ footer.footer {
   background-size:cover;
   background-repeat: no-repeat;
   background-position: center;
+
   
 }
 
 .contacts {
-  padding-top: 66px;
+  margin: 0 auto;
+
 }
 
 .footer_tele {
@@ -953,7 +1027,8 @@ footer.footer {
 
 .logo2 {
    height: 87px;
-   margin-top: 66px;
+   margin: 0 auto;
+   display: block;
      
    
 }
@@ -1107,12 +1182,161 @@ textarea::-moz-placeholder { color: #37240b; }
 
 
   button.application2 {
-    font-size: 1.6vw;
+    font-size:18px;
     display: block;
     width: 320px;
     height: 70px;
     padding-bottom: 5px;
     margin:auto;
 }
+
+.ok {
+  
+  display: block;
+  position: relative;
+
+}
+
+.minus_close {
+display: block;
+
+position: absolute;
+top: 0px;
+right: 0;
+}
+
+
+
+/*Стили для адаптивности */
+@media screen and (max-width: 750px){
+
+
+
+h1.search {
+  font-size: 24px;  
+  
+  
+}
+#price {
+  background-image: url(../img/price_background.jpg); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+ 
+  }
+
+}
+
+
+@media screen and (min-width: 291px) and (max-width : 450px){
+.questions_for_answer {
+  padding-top: 12px;
+  
+}
+
+
+img.past1 {
+  width: 100px;
+
+}
+img.past2 {
+  width: 100px;
+  display: block;
+  float: left;
+  margin-left: 0;
+
+}
+
+.first_line {
+  max-width: 180px;
+  float: left;
+ 
+
+}
+
+
+.question_text { 
+  max-width: 180px;
+ 
+  
+}
+#about_us {
+ background-size: 100%;
+  }
+
+#price {
+  background-image: url(../img/price_background.jpg); 
+  background-repeat: no-repeat;
+ background-size: 100%;
+  }
+
+ 
+
+
+
+@media screen and (max-width: 290px){
+img.past1 {
+  width: 60px;
+}
+ img.past2 {
+  width: 60px;
+}
+
+p.do_you_know {
+font-size: 16px;
+
+}
+
+.first_line {
+  padding-top: 10px;
+  max-width: 200px;
+  float: none;
+  text-align: center;
+ 
+
+}
+
+
+.question_text { 
+   padding-top: 10px;
+  max-width: 200px;
+  float: none;
+  text-align: center;
+ 
+  
+}
+button.application {
+  font-size: 14px;  
+  width: 140px;
+  height: 35px;
+  padding-bottom: 5px;
+  
+}
+
+
+button.application2 {
+ 
+  font-size: 15px;  
+  width: 170px;
+  height: 35px;
+  padding-bottom: 5px;
+  
+}
+
+.logo {
+  width: 74px;
+}
+
+}
+
+
+#main_screen{
+  padding-top: 136px; 
+  
+  }
+
+
+
+
 
 
