@@ -1,8 +1,1 @@
-@font-face {
-    font-family: 'Roboto Bold';
-    font-style: normal;
-    font-weight: 700;
-    src: local('Roboto Bold'), local('Roboto-Bold'),
-        url(http://allfont.ru/cache/fonts/roboto-bold_aa865d37ee4a1cbd58a4f1c027933149.woff) format('woff'),
-        url(http://allfont.ru/cache/fonts/roboto-bold_aa865d37ee4a1cbd58a4f1c027933149.ttf) format('truetype');
-}
+@font-face {font-family: 'Roboto Bold';font-style: normal;font-weight: 700;src: local('Roboto Bold'), local('Roboto-Bold'),url(http://allfont.ru/cache/fonts/roboto-bold_aa865d37ee4a1cbd58a4f1c027933149.woff) format('woff'),url(http://allfont.ru/cache/fonts/roboto-bold_aa865d37ee4a1cbd58a4f1c027933149.ttf) format('truetype');}
